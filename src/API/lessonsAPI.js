@@ -118,11 +118,11 @@ const getLessons = [
         sections: [
             {
                 title: (<h4>Learn How to Make An RPG Game</h4>),
-                infoText: "ik rite so cool"
+                infoText: "Going to update w/ content"
             },
             {
-                title: "ya like omg text",
-                infoText: "oh ya i like text on the screeen"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             }
         ]
     },
@@ -213,16 +213,16 @@ const getLessons = [
         header: "Conditional Statements",
         sections: [
             {
-                title: "First Why Strings Are Cool",
-                infoText: "You can say what you want"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Second Why Strings Are Cool",
-                infoText: "They can make error messages"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Third Why Variables Are Cool",
-                infoText: "Okay yeah strings yeah"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
         ]
     },
@@ -231,16 +231,16 @@ const getLessons = [
         header: "Functions",
         sections: [
             {
-                title: "First Why Strings Are Cool",
-                infoText: "You can say what you want"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Second Why Strings Are Cool",
-                infoText: "They can make error messages"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Third Why Variables Are Cool",
-                infoText: "Okay yeah strings yeah"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
         ]
     },
@@ -249,16 +249,16 @@ const getLessons = [
         header: "Week 3 Practice Problems: Conditional Statements",
         sections: [
             {
-                title: "First Why Strings Are Cool",
-                infoText: "You can say what you want"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Second Why Strings Are Cool",
-                infoText: "They can make error messages"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Third Why Variables Are Cool",
-                infoText: "Okay yeah strings yeah"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
         ]
     },
@@ -267,16 +267,16 @@ const getLessons = [
         header: "Week 4: Game",
         sections: [
             {
-                title: "First Why Strings Are Cool",
-                infoText: "You can say what you want"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Second Why Strings Are Cool",
-                infoText: "They can make error messages"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Third Why Variables Are Cool",
-                infoText: "Okay yeah strings yeah"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
         ]
     },
@@ -285,16 +285,16 @@ const getLessons = [
         header: "Week 4: Video",
         sections: [
             {
-                title: "First Why Strings Are Cool",
-                infoText: "You can say what you want"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Second Why Strings Are Cool",
-                infoText: "They can make error messages"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Third Why Variables Are Cool",
-                infoText: "Okay yeah strings yeah"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
         ]
     },
@@ -303,16 +303,16 @@ const getLessons = [
         header: "Week 4 Practice Problems: Functions",
         sections: [
             {
-                title: "First Why Strings Are Cool",
-                infoText: "You can say what you want"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Second Why Strings Are Cool",
-                infoText: "They can make error messages"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
             {
-                title: "Third Why Variables Are Cool",
-                infoText: "Okay yeah strings yeah"
+                title: "Going to update w/ content",
+                infoText: "Going to update w/ content"
             },
         ]
     },
