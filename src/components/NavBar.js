@@ -16,10 +16,10 @@ const NavBar = ({ header }) => {
             {"  "}
             <h4>Week 3:</h4>
             <Link to="/ConditionalStatements">Conditional Statements</Link>
-            <Link to="/Functions">Functions</Link>
             <Link to="/week3Practice">Practice Problems</Link>
             {"  "}
             <h4>Week 4:</h4>
+            <Link to="/lists">For Loops and Lists</Link>
             <Link to="/week4Game">Game</Link>
             <Link to="/week4Video">Video</Link>
             <Link to="/week4Practice">Practice Problems</Link>

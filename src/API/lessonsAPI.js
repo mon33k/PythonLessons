@@ -68,9 +68,10 @@ const getLessons = [
                     <Switch>
                         <Route path='/ConditionalStatements' render={this.renderEachLesson} />
                     </Switch>
+                    <br></br>
                     <li style={{ textDecoration: 'underline' }}>October 5, Friday:</li>
-                    <p>Introduce the concept of functions using variables, conditionals and the datatype array. Simple practice problems.</p>
-                    <Link to="/Functions">Functions</Link>
+                    <p>Reinforce the concepts of conditional statements through creating a game of Rock, Paper, Scissors</p>
+                    <Link to="/week3Practice">Practice Problem</Link>
                     <Switch>
                         <Route path='/Functions' render={this.renderEachLesson} />
                     </Switch>
@@ -84,18 +85,14 @@ const getLessons = [
                     <li style={{ textDecoration: 'underline' }}>October 12, Friday:</li>
                     <p>Reinforce the important concepts of functions and conditionals, activity, practice problems, games or videos</p>
                     <Link to="/week4Game">Game</Link>
-                    <br></br> 
+                    <br></br>
                     <Link to="/week4Video">Video</Link>
                     <br></br>
-                    <Link to="/week4Practice">Practice Problems</Link>
                     <Switch>
                         <Route path='/week4Game' render={this.renderEachLesson} />
                     </Switch>
                     <Switch>
                         <Route path='/week4Video' render={this.renderEachLesson} />
-                    </Switch>
-                    <Switch>
-                        <Route path='/week4Practice' render={this.renderEachLesson} />
                     </Switch>
                 </ul>)
             },
@@ -117,12 +114,12 @@ const getLessons = [
         header: "Further Learning",
         sections: [
             {
-                title: (<h4>Learn How to Make An RPG Game</h4>),
-                infoText: "Going to update w/ content"
+                title: (<h3>1) Learn How to Code By Playing this RPG Game</h3>),
+                infoText: (<div><p>To play click this link <a href="https://codecombat.com/students?_cc=HalfFightHand">here</a></p><p>Class Code: HalfFightHand</p><br></br></div>)
             },
             {
-                title: "Going to update w/ content",
-                infoText: "Going to update w/ content"
+                title: (<h3>2) Video: What Can You Do with Python? - The 3 Main Applications</h3>),
+                infoText: (<p>Click <a href="https://www.youtube.com/watch?v=kLZuut1fYzQ">here</a> to view video!</p>)
             }
         ]
     },
@@ -169,12 +166,12 @@ const getLessons = [
             },
             {
                 title: <p>The variable X contains the value 15. <br></br> This can be read in python as:</p>,
-                infoText: <SyntaxHighlighter language='javascript' style={foundation}
+                infoText: <SyntaxHighlighter language='python' style={foundation}
                 >{` x = 15 \n print(x) \n \n Output: 15`}</SyntaxHighlighter>
             },
             {
                 title: <p>If we want to change this variable we can re-assign the value to a different integer, string or boolean or even a new variable. For this example we are going to add to the value of x. We use the built in method print() to print the variable’s value onto the console.</p>,
-                infoText: <SyntaxHighlighter language='javascript' style={foundation}
+                infoText: <SyntaxHighlighter language='python' style={foundation}
                 >{` x = 15 + 5 \n x = 20 \n print(x) \n \n Output: 20`}</SyntaxHighlighter>
             },
             {
@@ -213,22 +210,49 @@ const getLessons = [
         header: "Conditional Statements",
         sections: [
             {
-                title: "Going to update w/ content",
-                infoText: "Going to update w/ content"
+                title: (<h2>The "if" Statement</h2>),
+                infoText: (<p>Why is this important? In order to write useful programs, we always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement.</p>)
             },
             {
-                title: "Going to update w/ content",
-                infoText: "Going to update w/ content"
+                title: (<p>Which has the general form:</p>),
+                infoText: <SyntaxHighlighter language='python' style={foundation}>{`if BOOLEAN EXPRESSION:       # This is an  if statement which is a boolean      \n    STATEMENTS               # These are the body statements after the if statement`}</SyntaxHighlighter>
             },
             {
-                title: "Going to update w/ content",
-                infoText: "Going to update w/ content"
+                title: (<h3>Important things to note about if statements: </h3>),
+                infoText: (<ol><li>The colon (:) is significant and required. It separates the if statement from the body statements.</li>
+                    <li>The line after the colon under the if statement MUST be indented. It is standard in Python to use four spaces for indenting.</li>
+                    <li>All lines indented the same amount after the colon under the if statement will be executed whenever the BOOLEAN_EXPRESSION is true. </li>
+                </ol>)
             },
+            {
+                title: (<p>Example:</p>),
+                infoText: <SyntaxHighlighter language='python' style={foundation}>{`food = 'Chicken Adobo' \n\nif food == 'Chicken Adobo': \n    print('Ummmm, my favorite!') \n    print('I feel like saying it 100 times...') \n    print(100 * (food + '! '))`}</SyntaxHighlighter>
+            },
+            {
+                title: (<h2>The "if else" Statement</h2>),
+                infoText: (<p>If you want one thing to happen when a condition is true, and something else to happen when it is false. For that we have the if else statement. </p>)
+            },
+            {
+                title: (<p>This follows the general form:</p>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation}>{`if BOOLEAN EXPRESSION: \n    STATEMENTS_1        #executed if condition evaluates to True \nelse:\n    STATEMENTS_2        # executed if condition evaluates to False`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<h2>Chained Conditionals</h2>),
+                infoText: (<p>Sometimes there are more than two possibilities. One way to express that is a chained conditional. We use elif (which means else if) for conditionals in between the first and last if else statement.</p>)
+            },
+            {
+                title: (<p>The general form looks like this:</p>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation}>{`x = 20\ny = 5\n\nif x < y:\n    STATEMENTS_A\nelif x > y:\n    STATEMENTS_B\nelse:\n    STATEMENTS_C`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<p>Example:</p>),
+                infoText: (<div><SyntaxHighlighter language='python' style={foundation}>{`choice = ‘b’\n\nif choice == 'a':\n    print("You choose 'a'.")\nelif choice == 'b':\n    print("You choose 'b'.")\nelif choice == 'c':\n    print("You choose 'c'.")\nelse:\n    print("Invalid choice.")`}</SyntaxHighlighter><p>You can see how in the code above if you change the value of choice you will get different results each time you run your code.</p></div>)
+            }
         ]
     },
     {
-        urlPath: "Functions",
-        header: "Functions",
+        urlPath: "lists",
+        header: "lists",
         sections: [
             {
                 title: "Going to update w/ content",
@@ -249,17 +273,124 @@ const getLessons = [
         header: "Week 3 Practice Problems: Conditional Statements",
         sections: [
             {
-                title: "Going to update w/ content",
-                infoText: "Going to update w/ content"
+                title: (<h2>Creating a Rock, Paper, Scissors Game</h2>),
+                infoText: (<p>In this project you will make a Rock, Paper, Scissors game and play against the computer.</p>)
             },
             {
-                title: "Going to update w/ content",
-                infoText: "Going to update w/ content"
+                title: (<p>Rules: You and the computer both choose rock, paper or scissors. The winner is decided by these rules:</p>),
+                infoText: (<div><ol>
+                    <li>Rock blunts scissors</li>
+                    <li>Paper covers rock</li>
+                    <li>Scissors cut paper</li>
+                </ol>
+                </div>)
             },
             {
-                title: "Going to update w/ content",
-                infoText: "Going to update w/ content"
+                title: (<h2>Step 1: Player's Turn</h2>),
+                infoText: (<p>First, let the player choose Rock, Paper or Scissors. <br></br><br></br><li>Begin by first opening a new repl.it document selecting the computer lanugage python.</li></p>)
             },
+            {
+                title: (<p>Remember when I mentioned python having a lot of libraries or modules you can use built in? Well randint is one of them and will allow for us to generate random numbers. <li>For this project you need to import it at the top of your document in order to use it in your program</li></p>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true}>{`import random from randint`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>Next we are going to let the player choose Rock, Paper or Scissors by typing the letter ‘r’, ‘p’ or ‘s’.</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true}>{`import random from randint\n\nplayer = input('rock (r), paper (p), or scissors (s)?')`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>Now print out what the player chose</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true}>{`import random from randint\n\nplayer = input('rock (r), paper (p), or scissors (s)?')\nprint(player, 'vs')`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>Test your code by clicking Run. Click in the Repl.it output window and enter your choice on the right side of the screen.</li>),
+                infoText: (<p></p>)
+            },
+            {
+                title: (<h2>Step 2: Computer’s Turn</h2>),
+                infoText: (<p>Now it’s the computer’s turn. You can use the randint function to generate a random number to decide between rock, paper and scissors.</p>)
+            },
+            {
+                title: (<li>Use randint to generate a random number (between 1 - 3) to decide whether the
+                    computer has chosen rock, paper or scissors.</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true}>{`import random from randint\n\nplayer = input('rock (r), paper (p), or scissors (s)?')\nprint(player, 'vs')\n\nchosen = randint(1,3)     # This will generate a random number between 1 and 3\nprint(chosen)           # Use print() to see this random number`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>Run your script lots of times (you’ll need to enter ‘r’, ‘p’ or ‘s’ each time.<br></br>You should see that ‘chosen’ is randomly set to either 1, 2 or 3.</li>),
+                infoText: (<div><p>Let’s say:</p><ul>
+                    <li>1 = rock (r)</li>
+                    <li>2 = paper (p)</li>
+                    <li>3 = scissors (s)</li>
+                </ul></div>)
+            },
+            {
+                title: (<li>Use if to check if the chosen number is 1 ( == is used to see if 2 things are the same).</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={6}>{`chosen = randint(1,3)\nprint(chosen)\n\nif chosen == 1:       # Don't forget the colon!`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<div><p>Python uses indentation to execute code in if statements.</p><li>After if chosen == 1, press the space bar four times and create a variable called computer and set the value equal to 'r' </li></div>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={9}>{`if chosen == 1:\n    computer = 'r'     # Don't forget to indent 4 spaces, to create a code block for this if statement!`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>You can add an alternative check using elif (short for else if):</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={9}>{`if chosen == 1:\n    computer = 'r'\n\nelif chosen == 2:\n    computer = 'p'      # Don't forget to indent this code block as well so the computer knows it belongs with this elif (aka else if) statement!`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<p>This condition will only be checked if the first condition fails (if the computer didn’t choose 1 )</p>),
+                infoText: (<li>And finally, if the computer didn’t choose 1 or 2 then it must have chosen 3.</li>)
+            },
+            {
+                title: <p>This time we can just use else which means otherwise.</p>,
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={9}>{`if chosen == 1:\n    computer = 'r'\n\nelif chosen == 2:\n    computer = 'p'\n\nelse:\n    computer = 's'`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>Now, instead of printing out the random number that the computer chose you can print the letter.</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={9}>{`if chosen == 1:\n    computer = 'r'\n\nelif chosen == 2:\n    computer = 'p'\n\nelse:\n    computer = 's'\n\nprint(computer)        # Instead of printing out the random number that the computer chose you can print the letter.`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>You can either delete the line print(chosen) on line 6, or make the computer ignore it by adding a # at the start of the line on line 6.</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={6}>{`chosen = randint(1,3)\nprint(chosen)          # Comment this out by putting # at the start of the line or delete this\n\nif chosen == 1:`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>Test your code by clicking Run and choosing your option.</li>),
+                infoText: (<li>Hmm, the computer’s choice gets printed on a new line. You can fix that by adding end='  ' after vs , that tells Python to end with a space instead of a new line.</li>)
+            },
+            {
+                title: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true}>{`import random from randint\n\nplayer = input('rock (r), paper (p), or scissors (s)?')\nprint(player, 'vs', end='  ')     # This is where you'd add the space\n\nchosen = randint(1,3)\n#print(chosen)`}</SyntaxHighlighter>),
+                infoText: (<div><li>Play the game a few times by clicking Run and making a choice.</li><p>For now you’ll have to work out who won yourself. Next you’ll add the Python code to work this out.</p></div>)
+            },
+            {
+                title: (<div><h2>Step 3: Check the Result</h2><p>Now let’s add the code to see who won.</p></div>),
+                infoText: (<li>You need to compare the player and computer variables to see who won.</li>)
+            },
+            {
+                title: (<p>If they’re the same then it’s a draw:</p>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={17}>{`\nprint(computer)\n\nif player == computer:\n    print('DRAW')`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>Test your code by playing the game a few times until you get a draw, You’ll need to click Run to start a new game.</li>),
+                infoText: (
+                <ul>
+                    <li>Now let’s look at the cases where the player chose ‘r’ (rock) but the computer didn’t.
+                        <ul>
+                            <li>If the computer chose ‘s’ (scissors) then the player wins (rock beats scissors).</li>
+                            <li>If the computer chose ‘p’ (paper) then the computer wins (paper beats rock).</li>
+                            
+                        </ul>
+                    </li>
+                </ul>)
+            },
+            {
+                title: (<li>We can check the player choice and the computer choice using and .</li>),
+                infoText: (<SyntaxHighlighter language='python' style={foundation} showLineNumbers={true} startingLineNumber={17}>{`\nprint(computer)\n\nif player == computer:\n    print('DRAW')\n\nelif player == 'r' and computer == 's':      # This is the line you add and in between player's choice and computer's choice\n    print('Player Wins!')\n\nelif player == 'p' and computer == 's':     # This is the line you add and in between player's choice and computer's choice\n    print('Computer wins!')`}</SyntaxHighlighter>)
+            },
+            {
+                title: (<li>And finally, can you add the code to check for the winner when the player chose ‘s’ (scissors) and the computer chose rock or paper?</li>),
+                infoText: (<div><li>Now play the game to test your code. </li><li>Click Run to start a new game.</li><img src={require('./images/rps14.png')} height="45%" width="45%" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} /></div>)
+            },
+            {
+                title: (<h2>Bonus Challenge: Create A New Game</h2>),
+                infoText: (<p>Can you create your own game like Rock, Paper, Scissors with different objects? They could be super heros, or items anything you want instead of Rock, Paper, Scissors</p>)
+            }
         ]
     },
     {
