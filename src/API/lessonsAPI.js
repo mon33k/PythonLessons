@@ -392,7 +392,7 @@ const getLessons = [
             },
             {
                 title: (<h1>Submit Your Finished Repl.it Link Here:</h1>),
-                infoText: (<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZ0ZLE8YvTFDnopeOnVOvx8d5QuPOTI-oL2mZOyiQd8w9rZA/viewform?embedded=true" width="640" height="627" frameborder="0" marginheight="0" marginwidth="0" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}>Loading...</iframe>)
+                infoText: (<div><a href="https://goo.gl/forms/yL8eU1lGmM6dRagD2">Click Here</a><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZ0ZLE8YvTFDnopeOnVOvx8d5QuPOTI-oL2mZOyiQd8w9rZA/viewform?embedded=true" width="640" height="627" frameborder="0" marginheight="0" marginwidth="0" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}>Loading...</iframe></div>)
             }
         ]
     },
