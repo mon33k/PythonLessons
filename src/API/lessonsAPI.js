@@ -387,7 +387,7 @@ const getLessons = [
                 infoText: (<div><li>Now play the game to test your code. </li><li>Click Run to start a new game.</li><img src={require('./images/rps14.png')} height="45%" width="45%" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} /></div>)
             },
             {
-                title: (<h2>Bonus Challenge: Create A New Game</h2>),
+                title: (<h2>Bonus Challenge For Extra Credit: Create A New Game</h2>),
                 infoText: (<p>Can you create your own game like Rock, Paper, Scissors with different objects? They could be super heros, or items anything you want instead of Rock, Paper, Scissors</p>)
             }
         ]
