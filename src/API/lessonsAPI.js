@@ -388,7 +388,11 @@ const getLessons = [
             },
             {
                 title: (<h2>Bonus Challenge For Extra Credit: Create A New Game</h2>),
-                infoText: (<p>Can you create your own game like Rock, Paper, Scissors with different objects? They could be super heros, or items anything you want instead of Rock, Paper, Scissors</p>)
+                infoText: (<div><p>Can you create your own game like Rock, Paper, Scissors with different objects? They could be super heros, or items anything you want instead of Rock, Paper, Scissors</p><br></br></div>)
+            },
+            {
+                title: (<h1>Submit Your Finished Repl.it Link Here:</h1>),
+                infoText: (<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZ0ZLE8YvTFDnopeOnVOvx8d5QuPOTI-oL2mZOyiQd8w9rZA/viewform?embedded=true" width="640" height="627" frameborder="0" marginheight="0" marginwidth="0" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}>Loading...</iframe>)
             }
         ]
     },
