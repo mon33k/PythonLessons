@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, Link } from 'react-router-dom'
+import { Route, Switch, Link, Redirect } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 import EachLesson from './components/EachLesson';
@@ -33,16 +33,19 @@ class App extends Component {
     const { header } = this.props
 
     return (
-        <body class="container">
-          <header>Intro To Python
+      <body class="container">
+        <header>Intro To Python
             {"  "}
-          <img src="https://png.icons8.com/color/50/000000/python.png" height="42" width="42" />          
-          </header>
-         <NavBar header={header}/>
-          <Switch>
-            <Route path='/:urlPath' render={this.renderEachLesson} />
-          </Switch>
-        </body>
+          <img src="https://png.icons8.com/color/50/000000/python.png" height="42" width="42" />
+        </header>
+        <NavBar header={header} />
+        <Switch>
+          {/* <Route path='/'>
+            <Redirect from='/' to='/HowToPass' />
+          </Route> */}
+          <Route path='/:urlPath' render={this.renderEachLesson} />
+        </Switch>
+      </body>
     );
   }
 }

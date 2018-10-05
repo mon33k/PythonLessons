@@ -10,14 +10,13 @@ const getLessons = [
         sections: [
             {
                 title: "",
-                infoText: (<ol>
-                    <li>Practice Problems</li>
-                    <li>Projects</li>
-                    <li>Quizzes</li>
-                    <li>Classwork</li>
-                    <li>Attendance</li>
-                    <li>Behavior + Participation</li>
-                </ol>)
+                infoText: (<div><ol>
+                    <li>Practice Problems ------------------------------ 20%</li>
+                    <li>Projects ------------------------------------------- 30%</li>
+                    <li>Quizzes -------------------------------------------- 10%</li>
+                    <li>Classwork ----------------------------------------- 10%</li>
+                    <li>Attendance + Behavior / Participation ----- 30%</li>
+                </ol><li>If you miss a test or quiz come speak to me to let me know beforehand.</li><li>If you fail a test or quiz you will have the option to do extra credit work</li></div>)
             },
         ]
 
